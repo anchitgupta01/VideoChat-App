@@ -9,22 +9,10 @@ let inviteCode = String(Math.random().toString(36).slice(2))
  document.getElementById('roomid').innerHTML=inviteCode;
 
  function copied() {
-    //  var copyText = document.getElementById("roomid");
      var copyText = inviteCode;
-    // copyText.select();
-    // copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText);
-    
     var tooltip = document.getElementById("copyText");
     tooltip.innerHTML = "Copied ";
-
-    // tooltip.setAttribute('id', 'myElement');
-    // setTimeout(function() {
-    //     tooltip.setAttribute('id', '');
-
-    //   }, 5000);
- 
-   
   }
   
   function toCopy() {
