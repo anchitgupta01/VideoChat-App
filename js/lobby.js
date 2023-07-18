@@ -12,5 +12,5 @@ form.addEventListener('submit', (e) => {
 
     let inviteCode = document.getElementById("room").value;
         // inviteCode =  String(Math.random().toString(36).slice(2))
-    window.location = `/html/room.html?room=${inviteCode}`
+    window.location = `./room.html?room=${inviteCode}`
 })
