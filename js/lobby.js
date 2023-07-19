@@ -11,6 +11,6 @@ form.addEventListener('submit', (e) => {
     sessionStorage.setItem('display_name', e.target.name.value)
 
     let inviteCode = document.getElementById("room").value;
-        // inviteCode =  String(Math.random().toString(36).slice(2))
+    
     window.location = `./html/room.html?room=${inviteCode}`
 })
