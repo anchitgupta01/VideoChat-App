@@ -44,7 +44,7 @@ function copied() {
 
 let displayName = sessionStorage.getItem('display_name')
 if(!displayName){
-    window.location = 'index.html'
+    window.location = '/VideoChat-App/index.html'
 }
 
 let localTracks = []
