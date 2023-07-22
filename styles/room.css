@@ -220,7 +220,10 @@
 }
 
 .message__text {
-  margin: 0;
+  margin: 0px;
+  padding: 4px;
+  background-color: beige;
+  border-radius: 15px;
 }
 
 #message__form {
