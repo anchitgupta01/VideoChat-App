@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/main.css'>
 
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/room.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='../styles/createRoom.css'> -->
 </head>
 <body>
 
@@ -40,7 +41,9 @@
     <main class="container">
         <div id="room__container">
 
+            
             <section id="members__container">
+                <div >
 
             <div id="members__header">
                 <p>Participants</p>
@@ -48,9 +51,24 @@
             </div>
 
             <div id="member__list">
+                
+                   
             </div>
-
-            </section>
+        </div>
+            
+            <div class="invite">invite code
+            
+                    <div id="links">
+                        <div id="link"> ${roomId}
+                        </div>
+                        <div class="copytext">                  
+                            <img src="../images/copy.png"  id="copyImg1" onclick="copied()" onmouseout="toCopy()" >
+                            <span id="copyText">Copy to clipboard</span>
+                        </div>
+                    </div>
+                </div>
+                
+        </section>
 
             <section id="stream__container">
 
@@ -99,4 +117,5 @@
 <script type="text/javascript" src="../js/room.js"></script>
 <script type="text/javascript" src="../js/room_rtm.js"></script>
 <script type="text/javascript" src="../js/room_rtc.js"></script>
+
 </html>

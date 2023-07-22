@@ -19,6 +19,28 @@ let roomId = urlParams.get('room')
 if(!roomId){
     roomId = 'main'
 }
+let roomDiv = `<div class="copytext">
+                                 
+<img src="../images/copy.png"  id="copyImg1" onclick="copied()" onmouseout="toCopy()" >
+<span id="copyText">Copy to clipboard</span>
+
+</div>
+`
+// document.getElementById('links').insertAdjacentHTML('afterend', roomDiv);
+document.getElementById('link').innerHTML =roomId;
+
+
+function copied() {
+     
+    navigator.clipboard.writeText(roomId);
+    var tooltip = document.getElementById("copyText");
+    tooltip.innerHTML = "Copied ";
+  }
+  
+  function toCopy() {
+    let tooltip = document.getElementById("copyText");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
 
 let displayName = sessionStorage.getItem('display_name')
 if(!displayName){

@@ -9,8 +9,8 @@ let inviteCode = String(Math.random().toString(36).slice(2))
  document.getElementById('roomid').innerHTML=inviteCode;
 
  function copied() {
-     var copyText = inviteCode;
-    navigator.clipboard.writeText(copyText);
+     
+    navigator.clipboard.writeText(inviteCode);
     var tooltip = document.getElementById("copyText");
     tooltip.innerHTML = "Copied ";
   }
@@ -32,13 +32,13 @@ function myTimer() {
 
     document.getElementById("time").innerHTML = time + " • " + weekday[day] + ", " + date+" " + month[month1];
 }
-
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     
     sessionStorage.setItem('display_name', e.target.name.value)    
+
+    window.location = `./room.html?room=${inviteCode}`
         // only window location changed
-        window.location = `./room.html?room=${inviteCode}`
     })
     
 
