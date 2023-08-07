@@ -59,12 +59,14 @@
   text-align: center;
   /* display: flex; */
   /* border-radius: 10px; */
+  width: inherit;
   position: absolute;
   bottom: 77px;
 
 }
 #link {
   margin-right: 4vh;
+  width: 90%;
   text-align: center;
   /* border: 1px solid black; */
   border-radius: 10px;
@@ -107,7 +109,7 @@
   position: absolute;
   z-index: 1;
   bottom: 40px;
-  left: 72%;
+  left: 75%;
   font-size: x-small;
   margin-left: -18px;
   opacity: 0;
@@ -255,6 +257,7 @@
 }
 
 #stream__container {
+  
   justify-self: center;
   width: calc(100% - 40.7rem);
   position: fixed;
